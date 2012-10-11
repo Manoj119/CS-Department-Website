@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript">
+$(document).ready(function() {
+$('#close-button').click(function( ) { 
+    $('#ajax-shadow').css('display','none'); 
+    $('#ajax-container').css('display','none');});
+});
+</script>
+<style type="text/css">
+
+
+
+#top-wrapper {
+    width:520px;
+    padding:12px;  
+    box-shadow: 0 0 5px #adadad;
+    position: absolute;
+    border-radius:5px 5px 5px 5px;
+    background:-moz-linear-gradient(-90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); 
+}
+
+
+#content-wrapper {
+    background:url('pics/bg-texture.png'), rgb(249, 249, 249);
+    box-shadow:0px 0px 1px #c1c1c1 inset;
+    padding:12px;
+    margin-top:4px;
+    border-radius:4px;
+}
+
+#title-wrapper { 
+    color: rgb(241, 14, 29);
+    font-family: roboto;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 4px 16px;
+}
+
+#describe {
+    color: #545454;
+    font-family: roboto;
+    font-size: 14px;
+    padding: 12px 16px;
+}
+#close-button {
+    -moz-transition-duration: 1s;
+    background: none repeat scroll 0 0 rgb(241, 14, 29);
+    border-radius: 0 5px 0 5px;
+    float: right;
+    height: 28px;
+    padding: 2px;
+    position: absolute;
+    right:0;
+    text-align: center;
+    top:0;
+    width: 28px;
+    cursor:pointer;
+}
+
+#close-button a {
+    color: white;
+    font-family: arial rounded mt bold;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#content-wrapper ul {
+    list-style: none outside none;
+    padding:12px 40px;
+}
+
+#content-wrapper li a {
+    color: rgba(241, 14, 29, 0.8);
+    font-family:arial;
+    font-size: 12px;
+    text-decoration: none;
+}
+#content-wrapper li:last-child {
+    margin-left:80px;
+}
+#content-wrapper label {
+    color:#434343;
+    font-family: roboto;
+    font-size: 14px;
+    margin: 12px 5px;
+    padding: 4px;
+}
+#content-wrapper input {
+    border:1px solid #c3c3c3;
+    color: rgb(67, 67, 67);
+    font-family: helvetica;
+    font-size: 12px;
+    margin: 8px 2px 8px 12px;
+    padding: 4px 4px;
+}
+#content-wrapper input[type="text"], [type="password"] {
+    height: 26px;
+    width: 296px;
+}
+#content-wrapper input[type="checkbox"] {
+    background: none repeat scroll 0 0 rgb(249, 249, 249);
+    margin-left:75px;
+    margin-right:8px;
+}
+#content-wrapper input[type="submit"] {
+    background: -moz-linear-gradient(center top , rgb(73, 155, 234) 0%, rgb(32, 124, 229) 100%) repeat scroll 0 0 transparent;
+    border: 1px solid;
+    border-color:rgba(28, 35, 255,0.2) rgba(28, 35, 255,0.5) rgba(28, 35, 255, 0.5) rgba(28, 35, 255,0.2);
+    box-shadow: 0px 1px 2px rgba(28, 35, 255,0.2), 0px 0px 1px #c1c1c1;
+    color: rgb(244, 244, 244);
+    font-weight: bold;
+    height: 36px;
+    margin-left:84px;
+    position: relative;
+    width: 105px;
+}
+#content-wrapper input[type="submit"]:active {
+    -moz-transition-duration: 0.3s;
+    box-shadow: 0 0 2px rgb(195, 195, 195);
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<section id="top-wrapper">
+    <div id="title-wrapper"> SHIATS  Sign In </div>
+    <div id="close-button"> <a title="Click to close-button" > x </a> </div>
+    <div id="content-wrapper">
+    <ul><form method="post" action="/java/ServerActions">
+    <li><label for="username">Username<input type="text" name="username" placeholder="Username or PID" autofocus required/></label></li><input type="hidden" name="action" value="login" />
+    <li><label for="password">Password<input type="password" name="password" placeholder="Password" required/></label></li>
+    <li><label for="checkbox"><input type="checkbox" name="checkbox" value="Remember Me" />Remember Me</label></li>
+    <li><input type="submit" value="Enter" /></li>
+    <li><a href="passwordhelper.jsp">Can't Access your Account ?</a></li></form></ul>
+    </div>
+</section>
+
+</body></html>

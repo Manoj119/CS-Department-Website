@@ -1,0 +1,190 @@
+/* SHOW USERS */
+	public static String[ ] showUsers( String tableName ) {
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Select * from Users");
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* SHOW USER-INFORMATION */
+	public static String[ ] showUserInfo( String username ) {
+
+		try {
+			if( username == null ) {
+			PreparedStatement prepare = connect.prepareStatement("Select * from students");
+			if(resultSet.next( ))   {
+			}
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* ADD UPDATES TO DATABASE */
+	public static String[ ] addUpdates( String[ ] updateData ) {
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into updates values("?","?","?","?")");
+			for( int i =1; i< updateData.length( ); i++ )
+				prepare.setString( i, updateData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* ADD ADMINISTRATORS TO DATABASE */
+	public static boolean addAdmins( String[ ] updateData ) {
+		boolean output = true;
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into updates values("?","?","?","?")");
+			for( int i =1; i< updateData.length( ); i++ )
+				prepare.setString( i, updateData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* ADD ADMINISTRATORS TO DATABASE */
+	public static String[ ] addUpdates( String[ ] updateData ) {
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into updates values("?","?","?","?")");
+			for( int i =1; i< updateData.length( ); i++ )
+				prepare.setString( i, updateData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* ADD ADMINISTRATORS TO DATABASE */
+	public static String[ ] addUpdates( String[ ] updateData ) {
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into updates values("?","?","?","?")");
+			for( int i =1; i< updateData.length( ); i++ )
+				prepare.setString( i, updateData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+	/* ADD USERS TO DATABASE */
+	public static boolean addUsers( String[ ] userData ) {
+
+		private boolean output = false;
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into users values("?","?","?","?","?",?,?,?,?,"?","?")");
+			for( int i =1; i< userData.length( ); i++ )
+				if( i == 1)
+					prepare.setString( 1, createUserID( ) );
+				prepare.setString( i, userData[i-1] );
+			addUserInformation( )
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ("User not added !");
+		}
+
+		return output;
+	}
+
+	/* ADD USER INFORMATION TO DATABASE */
+	public static boolean addUserInformation( String[ ] userData ) {
+
+		private boolean output = false;
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into students values("?","?","?","?","?",?,?,?,?,"?","?")");
+			for( int i =1; i< userData.length( ); i++ )
+				prepare.setString( i, userData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "User Information not added");
+		}
+
+		return output;
+	}
+
+	/* ADD ADMINISTRATORS TO DATABASE */
+	public static String[ ] addUpdates( String[ ] updateData ) {
+
+		try {
+			PreparedStatement prepare = connect.prepareStatement("Insert into updates values("?","?","?","?")");
+			for( int i =1; i< updateData.length( ); i++ )
+				prepare.setString( i, updateData[i-1] );
+
+			resultSet = prepare.executeQuery( );
+			if(resultSet.next( ))   {
+				output = true;
+			}
+		}
+
+		catch ( SQLException | NullPointerException e ) {
+			System.out.println ( "ADMINS could'not be added.");
+		}
+
+		return output;
+	}
+
+

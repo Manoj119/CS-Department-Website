@@ -1,0 +1,206 @@
+<html>
+<head>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#right-wrap').click(function( ) { $('#hover_shadow').css('display','none'); $('#hover-content').css('display','none');});
+});
+</script>
+<style type="text/css">
+
+
+
+
+
+
+
+#wrapper3{
+background:#F7F4F4;
+width:600px;
+padding:16px;
+position: absolute;
+box-shadow:0px 0px 5px grey;
+
+}
+
+#left-wrap{
+font-family:roboto;
+font-size:28px;
+margin:-16px -16px;
+color:rgba(241,14,29,1);
+background:#f9f9f9;
+padding:8px 12px;
+box-shadow:0px 0px 2px #c3c3c3;
+font-weight:bold;
+}
+
+#left-wrap p{
+display:inline;
+font-family:roboto;
+font-size:20px;
+color:rgba(241,14,29,1);
+background:#f9f9f9;
+font-weight:bold;
+
+}
+
+#right-wrap{
+background:rgba(241,14,29,1);
+top:0px;
+right:0;
+width:25px;
+height:23px;
+float:right;
+position:absolute;
+text-align:center;
+padding:3px;
+border-radius:0px 0px 0px 15px;
+box-shadow:0px 0px 1px white;
+border:1px solid white;
+opacity:0.6;
+-moz-transform-property:all;
+-moz-transition-duration: 1s;
+-moz-transition-funtion:fade-in;
+}
+
+#right-wrap:hover{
+opacity:1;
+cursor:pointer;
+box-shadow:0px 0px 1px #adadad;
+-moz-transform-property:all;
+-moz-transition-duration: 1s;
+-moz-transition-funtion:fade-out;
+}
+
+#right-wrap a{
+font-family:arial rounded mt bold;
+font-weight:bold;
+text-decoration:none;
+color:white;
+font-size:16px;
+}
+
+#in-wrap{
+margin-top:40px;
+margin-left:20%;
+}
+
+#wrapper3 ul{
+list-style:none;
+}
+
+#wrapper3 .lists_i{
+display:inline;
+}
+
+#wrapper3 .lists_l{
+display:block;
+}
+
+#wrapper3 li a{
+color:rgba(241,14,29,0.8);
+font-size:15px;
+font-family:roboto;
+text-decoration:none;
+}
+
+#wrapper3 li:last-child {
+padding:4px;
+color:
+}
+
+#wrapper3 label{
+font-family:open sans;
+font-size:16px;
+color:#029CEF;
+}
+
+option {
+    color:grey;
+    font-family:roboto;
+    font-size: 14px;
+    background:#f9f9f9;
+    height:16px;
+    padding:8px 12px;
+}
+
+option:hover {
+    box-shadow:inset 0px 0px 1px #c3c3c3;
+    cursor:pointer;
+}
+
+
+
+
+#wrapper3 input,select,textarea{
+    border:1px solid #88CAFA;
+    border-top:none;
+    color:grey;
+    font-family:roboto;
+    font-size: 14px;
+    height: 36px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding: 4px 12px;
+    width: 296px;
+    background:#f9f9f9;
+}
+select {
+      padding: 8px 12px;
+      width: 320px;
+}
+#wrapper3 input[type="submit"]
+{
+position:relative;
+border:1px solid #029CEF;
+margin-top:12px;
+margin-left:182px;
+width:140px;
+height:44px;
+font-weight:bold;
+box-shadow:0px 0px 1.2px #c3c3c3;
+}
+
+#wrapper3 input[type="submit"]:hover
+{
+cursor:pointer;
+box-shadow:0px 0px 2px #c3c3c3;
+-moz-transform-property:all;
+-moz-transition-duration: 1s;
+-moz-transition-funtion:fade-out;
+}
+
+textarea{
+height:auto;
+}
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+  <div id="wrapper3">
+  <div id="left-wrap"> <p>Send us your views and suggestions </p></div>
+  <div id="in-wrap">
+  <form name="write_us" method="post" action="/serverhandle">
+                 <li class="lists_l"><label for="name">Name</label></li> <li class="lists_l"><input type="text" name="name" placeholder="Enter you Name" autofocus required /><br/>
+                 <li class="lists_l"><label for="email">Your Email</label></li> <li class="lists_l"><input type="email" name="email" placeholder="Enter your Email" required /><br/>
+                 <li class="lists_l"><label for="priority">Priority</label> </li><li class="lists_l">
+                 <li class="lists_l"><select>
+                                                      <option>Very Important</option>
+                                                       <option>Important</option>
+                                                       <option>General</option>
+                </select></li><br/>
+                 <li class="lists_l"><label for="resp">Message</label> </li><li class="lists_l"><br/><textarea name="resp" rows="5"cols="32"></textarea><br/></li>
+                 <li class="lists_l"><input id="sb" type="submit" value="Submit"/></li>
+                </form>
+<div id="right-wrap"> <a title="Click to close" > x </a> </div>
+</div>
+
+</body></html>
