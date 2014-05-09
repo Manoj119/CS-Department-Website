@@ -1,0 +1,278 @@
+
+.container-b {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+.sql-box textarea {
+    border: medium none;
+    height: 300px;
+    padding: 16px;
+    width: 96%;
+}
+fieldset {
+    border-color: teal;
+    margin: 12px 0;
+    padding: 20px;
+}
+#account-info {
+    height: 60px;
+}
+#account-info img {
+    float: left;
+    height: 80px;
+    margin-top: -12px;
+    padding: 4px;
+    width: 80px;
+}
+label {
+    display: inline-block;
+    font-family: roboto;
+    font-weight: bold;
+    padding: 4px 12px;
+    text-align: center;
+}
+#user-menu {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+    border-bottom: medium none;
+    float: right;
+    overflow: hidden;
+    width: 40px;
+}
+#user-options form {
+    display: inline;
+}
+#user-menu img {
+    height: 36px;
+    margin: -8px 0;
+    width: 36px;
+}
+.ui-buttons {
+    background: none repeat scroll 0 0 orange;
+    border-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.3);
+    border: 1px solid;
+    box-shadow: 0 0 2px rgb(195, 195, 195);
+    color: rgb(67, 67, 67);
+    cursor: pointer;
+    font: 14px roboto;
+    height: 40px;
+    margin: 4px;
+    width: 120px;
+    border-radius: 2px 2px 2px 2px;
+    display: inline-block;
+    height: 24px;
+    padding: 12px 0;
+    text-align: center;
+    width: 140px;
+}
+.search-ops .ui-buttons, .sql-box .ui-buttons {
+    height: 48px;
+    margin: 0 -1px;
+}
+
+.ui-buttons:active {
+    background: none repeat scroll 0 0 rgb(255, 201, 132);
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 0 1px white;
+}
+.ui-buttons a {
+    color: rgb(52, 52, 52);
+    font-family: segoe ui;
+    text-decoration: none;
+}
+#user-options {
+    background: none repeat scroll 0 0 whitesmoke;
+    box-shadow: 0 0 4px rgb(67, 67, 67);
+    display: none;
+    margin: 12px;
+    padding: 4px;
+    position: absolute;
+    right: 0;
+}
+#user-options:before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: whitesmoke transparent;
+    border-image: none;
+    border-style: solid;
+    border-width: 0 10px 10px;
+    content: "";
+    margin: -14px 10px;
+    position: absolute;
+    right: 0;
+    width: 0;
+}
+#user-options ul {
+    clear: both;
+    list-style-type: none;
+    margin: 0;
+    padding: 4px;
+}
+#user-options li {
+    display: inline-block;
+}
+#user-options input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    cursor: pointer;
+    font-family: roboto;
+    font-size: 14px;
+    height: 32px;
+}
+#user-options input:hover {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.05);
+}
+legend {
+    color: teal;
+    font-family: roboto;
+}
+noscript {
+    background: none repeat scroll 0 0 rgba(255, 0, 0, 0.7);
+    border: 1px solid rgba(255, 0, 0, 0.7);
+    color: rgb(244, 244, 244);
+    display: block;
+    font-family: roboto;
+    padding: 16px;
+    text-align: center;
+}
+body {
+    background: url("../pics/diagonal-bg.gif") repeat scroll 0 0%, -moz-linear-gradient(center top , rgb(238, 238, 238) 0%, rgb(238, 238, 238) 100%) repeat scroll 0 0 transparent;
+    margin: 0;
+    min-width: 1000px;
+}
+#container {
+    box-shadow: 0 0 3px rgb(173, 173, 173);
+    margin:0 auto;
+    width: 990px;
+}
+header {
+    background: url("../pics/header-admin.png") repeat scroll 0 -220px transparent;
+    height: 160px;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+}
+
+#top_contents {
+    background: none repeat scroll 0 0 whitesmoke;
+    clear: both;
+    height: 60px;
+    position: relative;
+}
+
+.search-ops input[type="text"] {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.1);
+    border-color: transparent rgba(0, 0, 0, 0.4) rgba(0, 0, 0, 0.4);
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(67, 67, 67);
+    font: 14px roboto;
+    height: 40px;
+    margin: 0 auto;
+    padding: 2px 8px;
+    width: 320px;
+}
+.search-ops input[type="text"]:focus {
+    -moz-transition: all 0.3s linear 0s;
+    background: none repeat scroll 0 0 rgba(250, 250, 250, 0.5);
+    color: rgb(67, 67, 67);
+}
+
+nav {
+    background: -moz-linear-gradient(center top , red 0%, rgb(207, 4, 4) 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 0 4px rgb(67, 67, 52);
+    height: 48px;
+    opacity: 1;
+    padding: 0;
+    z-index: 12;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    float: left;
+    height: 20px;
+    margin: 0;
+    padding: 14px 8px;
+    text-align: center;
+    width: 82px;
+}
+
+#center_contents {
+    background: none repeat scroll 0 0 whitesmoke;
+    padding: 24px;
+}
+footer {
+    background: url("../pics/bg_footer.png") repeat scroll 0 0 transparent;
+    box-shadow: 0 0 1.2px grey inset;
+    height: 240px;
+}
+footer ul {
+    font-family: tahoma;
+    font-size: 15px;
+    margin: 0;
+}
+footer ul li {
+    color: rgb(249, 249, 249);
+    display: inline;
+    float: left;
+    margin: 24px 24px 24px 50px;
+    padding: 0;
+}
+footer ul li ul {
+    margin-top: 4px;
+}
+footer ul li li {
+    display: block;
+    float: none;
+    font-size: 12.5px;
+    margin: 0 -40px;
+}
+#ajax-shadow {
+    background: none repeat scroll 0 0 white;
+    cursor: pointer;
+    display: none;
+    height: 150%;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 13;
+}
+#ajax-container {
+    margin: 140px auto;
+    position: absolute;
+    z-index: 14;
+}
+#feedbacks {
+    display: none;
+}
+#container-f {
+    display: none;
+}
+#updateinfo {
+    float: right;
+    margin-right: 120px;
+}
+.footer-info {
+    background: -moz-linear-gradient(center top , rgb(0, 0, 0) 0%, rgb(0, 4, 4) 100%) repeat scroll 0 0 transparent;
+    box-shadow: 0 1px 3px rgb(32, 32, 32);
+    clear: both;
+    color: rgb(244, 244, 244);
+    font: 12px helvetica;
+    padding: 12px;
+    position: relative;
+    top: 58px;
+}
